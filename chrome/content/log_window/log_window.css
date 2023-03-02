@@ -1,0 +1,120 @@
+@import url("chrome://global/skin/");
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+.tbl_header {
+   font-weight: bolder;
+   font-family: Arial, Verdana, Helvetica;
+   font-size: 8pt;
+   color: #fcfcfc;
+   background-color: #4F80AB;
+}
+
+.row_odd {
+	background: #E4E4E4;
+}
+
+.row_even {
+	background: #F4F4F4;
+}
+
+.highlight_current {
+    background: #F0F8E6; /*CCFFCC*/
+}
+
+
+tr {
+    vertical-align: top;
+   background: #ffffff;
+}
+
+td {
+    vertical-align: top;
+     font-family: Tahoma, sans-serif;
+    font-size:10px;
+}
+
+.debug_info_textbox_highlight {
+   -moz-appearance: none;
+    width: 180px;
+    border: 1px solid #FFAD33;
+    background: #ff6ea;
+    font-family: Tahoma, sans-serif;
+    font-size:10px;
+}
+
+/* textbox for the debug info */
+.debug_info_textbox {
+   -moz-appearance: none;
+    width: 180px;
+    border: 1px dotted #cccccc;
+    font-family: Tahoma, sans-serif;
+    font-size:10px;
+}
+
+iframe {
+    border: none;
+    height:0px;
+/*    height:0px;
+    overflow:hidden;
+    */
+}
+
+/* anchor_options are for the export/clear log links */
+.anchor_options {
+    color: #0000ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.anchor_options:hover {
+    color: #ff0000;
+}
+
+/* For the buttons */
+.icon_wrapper {
+    cursor: pointer;
+    display: block;
+}
+
+.info_button {
+    display:block;
+    background: url("chrome://rmtagfinder/content/log_window/info_square_blue.png") no-repeat;
+    height: 16px;
+    width: 16px;
+}
+
+.preview_link_button {
+    display:block;
+    background: url("chrome://rmtagfinder/content/log_window/anchor_square_orange.png") no-repeat;
+    height: 14px;
+    width: 16px;
+}
+
+/* on hover, this will popup and show the full URI of the data request */
+.data_req {
+    display: none;
+    position:absolute;
+    border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #FFAD33;
+    padding: 0.8em 1em;
+    font-family: Tahoma, sans-serif;
+    font-size:10px;
+    width:280px;
+    top:0px;
+    left:0px;
+    background: #FFFFAA;
+    color:#333333;
+    word-wrap:break-word;
+}
+
+/* hide the info button */
+a:hover .info_button  {
+    display:none;
+}
+
+/* show the full URI request */
+a:hover .data_req {
+    display:block;
+}

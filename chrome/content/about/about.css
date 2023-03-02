@@ -1,0 +1,73 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+description
+{
+  margin-left: 0;
+}
+
+separator, #rm-tag-finder-about-dialog
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* textbox for the disclaimer */
+.disclaimer_textbox {
+   -moz-appearance: none;
+    width: 500px;
+    border: 1px dotted #cccccc;
+    font-family: Tahoma, sans-serif;
+    font-size:10px;
+}
+
+#rm-tag-finder-about-details
+{
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.5em;
+}
+
+#rm-tag-finder-about-details-logo
+{
+  background-image: url("chrome://rmtagfinder/skin/logo.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  min-height: 75px;
+  min-width: 290px;
+  padding-right: 35px;
+}
+
+.date
+{
+  color: #999999;
+}
+
+.name
+{
+  font-size: large;
+  padding-right: 0.25em;
+}
+
+.name, .title
+{
+  font-weight: bold;
+  font-family: Arial, Verdana, Helvetica;
+}
+
+.title
+{
+  padding-top: 0.25em;
+}
+
+.url
+{
+  color: #0000ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.url:hover
+{
+  color: #ff0000;
+}

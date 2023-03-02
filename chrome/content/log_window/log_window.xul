@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://rmtagfinder/content/log_window/log_window.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://rmtagfinder/locale/translations.dtd">
+
+<window id="rm-tag-finder-log-window"
+        title="&rmtagfinder.menu.root.name;"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="log_window.js"></script>
+
+    <vbox flex="1" style="overflow:auto" >
+
+        <html:table cellspacing="1" cellpadding="3" bgcolor="#666666" border="0" id="rm-tag-finder-log-window-html-table">
+            <html:thead>
+              <html:tr>
+               <html:td colspan="5">
+                  <html:a href="#" onclick="LogWindow.clear_log()" class="anchor_options">&rmtagfinder.content.logwindow.option.clearlog;</html:a> |
+                  <html:a href="#" onclick="LogWindow.export_log()" class="anchor_options">&rmtagfinder.content.logwindow.option.exportlog;</html:a>
+               </html:td>
+            </html:tr>
+            <html:tr class="tbl_header">
+                <html:td width="20"></html:td>
+                <html:td width="60">&rmtagfinder.content.logwindow.tableheader.time;</html:td>
+                <html:td width="100">&rmtagfinder.content.logwindow.tableheader.domain;</html:td>
+                <html:td width="190">&rmtagfinder.content.logwindow.tableheader.decodedinfo;</html:td>
+                <html:td>&rmtagfinder.content.logwindow.tableheader.ad;</html:td>
+             </html:tr>
+            </html:thead>
+            <html:tbody id="rm-tag-finder-log-window-html-tbody"></html:tbody>
+        </html:table>
+
+    </vbox>
+
+    <popupset>
+        <menupopup id="rm-tag-finder-logwindow-popup">
+            <menuitem id="rm-tag-finder-logwindow-popup-copylink" label="&rmtagfinder.content.logwindow.submenu.copy;" oncommand="LogWindow.copy_content( document.popupNode )"/>
+        </menupopup>
+    </popupset>
+
+</window>

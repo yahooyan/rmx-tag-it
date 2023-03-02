@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://rmtagfinder/content/about/about.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://rmtagfinder/locale/translations.dtd">
+
+<dialog buttons="accept"
+        id="rm-tag-finder-about-dialog"
+        title="&rmtagfinder.app.name;"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="about.js"></script>
+
+    <vbox id="rm-tag-finder-about-details">
+        <hbox id="rm-tag-finder-about-details-logo"><!-- logo -->
+        </hbox>
+        <hbox>
+            <description class="name">&rmtagfinder.app.name;</description>
+            <description class="title">&rmtagfinder.app.version;</description>
+        </hbox>
+        <!--
+        <description class="title">&rmtagfinder.app.build.date.title;</description>
+        <description class="date">&rmtagfinder.app.build.date.value;</description>
+        <description class="title">&rmtagfinder.app.author.title;</description>
+        <description>&rmtagfinder.app.author.value;</description>
+        -->
+
+
+        <textbox class="disclaimer_textbox" readonly="readonly" multiline="true" id="disclaimer_textbox" rows="25"
+
+        value="Software License Agreement (BSD License)&#10;&#10;
+
+Copyright (c)2012, Yahoo! Inc.  All rights reserved.&#10;&#10;
+
+Redistribution and use of this software in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:&#10;&#10;
+
+* Redistributions of source code must retain the above
+  copyright notice, this list of conditions and the
+  following disclaimer.&#10;&#10;
+
+* Redistributions in binary form must reproduce the above
+  copyright notice, this list of conditions and the
+  following disclaimer in the documentation and/or other
+  materials provided with the distribution.&#10;&#10;
+
+* Neither the name of Yahoo! Inc. nor the names of Right Media tag.it's
+  contributors may be used to endorse or promote products
+  derived from this software without specific prior
+  written permission of Yahoo! Inc.&#10;&#10;
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#10;&#10;
+
+Right Media tag.it is issued by Yahoo! under the BSD license above.  Below is a list of certain
+publicly available source codes used in Right Media tag.it, along with the licensing terms that
+pertain to those sources. This list is for informational purposes only and is not intended to
+represent an exhaustive list of third party contributions to Right Media tag.it.&#10;&#10;
+
+* Jan Odvarko's demonstration of nsITraceableChannel:  In this article, Jan Odvarko demonstrates the usage
+  of nsITraceableChannel to intercept HTTP traffic. Right Media tag.it's use of this technique is included
+  under the BSD license with the author's permission.  The sample code is originally
+  released under the following BSD license: https://github.com/janodvarko/firebug/blob/master/extension/license.txt.
+  The demo can be found under the URL: http://www.softwareishard.com/blog/firebug/nsitraceablechannel-intercept-http-traffic/&#10;&#10;">
+        </textbox>
+
+        <description onclick="RmTagFinderAbout.open_url(this)" class="url">http://info.yahoo.com/privacy/us/yahoo/details.html</description>
+        <description class="title">&rmtagfinder.app.copyright.value;</description>
+
+    </vbox>
+    <separator class="groove"/>
+</dialog>

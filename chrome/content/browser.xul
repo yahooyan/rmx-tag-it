@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://rmtagfinder/skin/skin.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://rmtagfinder/locale/translations.dtd">
+<overlay id="rm-tag-finder" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="rm_tag_finder.js"></script>
+
+    <!-- Tools menu on top -->
+    <menupopup id="menu_ToolsPopup">
+        <menu
+            id="rm-tag-finder-menu"
+            label="&rmtagfinder.menu.root.name;"
+            insertafter="javascriptConsole,devToolsSeparator">
+          <menupopup>
+            <menuitem type="checkbox" id="rm-tag-finder-menu-enable" label="&rmtagfinder.menu.submenu.enabled;" oncommand='RmTagFinder.toggle(this,event)' checked="true"/>
+            <menuseparator id="rm-tag-finder-menu-separator-1"/>
+            <menuitem id="rm-tag-finder-menu-viewlog" label="&rmtagfinder.menu.submenu.view.log;" oncommand="RmTagFinder.open_log_window()"/>
+            <menuitem id="rm-tag-finder-menu-about" label="&rmtagfinder.menu.submenu.about;" oncommand="RmTagFinder.about()"/>
+          </menupopup>
+        </menu>
+    </menupopup>
+
+    <!-- menu that appears when you right click on a page -->
+   <popup id="contentAreaContextMenu">
+    <menu id="rm-tag-finder-context-menu"
+         label="&rmtagfinder.menu.root.name;">
+     <menupopup>
+        <menuitem id="rm-tag-finder-context-menu-viewlog" label="&rmtagfinder.menu.submenu.view.log;" oncommand="RmTagFinder.open_log_window()"/>
+        <menuitem id="rm-tag-finder-context-menu-about" label="&rmtagfinder.menu.submenu.about;" oncommand="RmTagFinder.about()"/>
+      </menupopup>
+    </menu>
+    </popup>
+
+    <!-- add another icon to the status bar at the bottom -->
+   <!--
+   <statusbar id="status-bar">
+    <statusbarpanel
+        id="rm-tag-finder-status-bar-icon"
+        class="statusbarpanel-iconic"
+        src="chrome://rmtagfinder/skin/status-bar.png"
+        tooltiptext="&rmtagfinder.menu.root.name;"
+        popup="rm-tag-finder-statusbar-popup"
+        context="rm-tag-finder-statusbar-popup"/>
+   </statusbar>
+
+   <popupset>
+      <menupopup id="rm-tag-finder-statusbar-popup">
+        <menuitem id="rm-tag-finder-statusbar-viewlog" label="&rmtagfinder.menu.submenu.view.log;" oncommand="RmTagFinder.open_log_window()"/>
+        <menuitem id="rm-tag-finder-statusbar-about" label="&rmtagfinder.menu.submenu.about;" oncommand="RmTagFinder.about()"/>
+      </menupopup>
+    </popupset>
+    -->
+</overlay>

@@ -1,0 +1,9 @@
+# this is the XPI bundle version
+
+content     rmtagfinder    jar:chrome/rmtagfinder.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://rmtagfinder/content/browser.xul
+
+locale	rmtagfinder	en-US	jar:chrome/rmtagfinder.jar!/locale/en-US/
+
+skin	rmtagfinder	classic/1.0	jar:chrome/rmtagfinder.jar!/skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://rmtagfinder/skin/skin.css

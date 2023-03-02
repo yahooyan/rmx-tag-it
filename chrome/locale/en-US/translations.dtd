@@ -1,0 +1,18 @@
+<!ENTITY rmtagfinder.app.name "tag.it">
+<!ENTITY rmtagfinder.app.version "1.0.2.4 Beta">
+<!ENTITY rmtagfinder.app.build.date.title "Build Date">
+<!ENTITY rmtagfinder.app.build.date.value "2012/06/06">
+<!ENTITY rmtagfinder.app.author.title "Author">
+<!ENTITY rmtagfinder.app.author.value "Lok Yan Wong">
+<!ENTITY rmtagfinder.app.copyright.value "Copyright (c)2012, Yahoo! Inc.  All rights reserved.">
+<!ENTITY rmtagfinder.menu.root.name "Right Media tag.it">
+<!ENTITY rmtagfinder.menu.submenu.about "About">
+<!ENTITY rmtagfinder.menu.submenu.view.log "Activity Log">
+<!ENTITY rmtagfinder.menu.submenu.enabled "Enabled">
+<!ENTITY rmtagfinder.content.logwindow.option.clearlog "Clear Log">
+<!ENTITY rmtagfinder.content.logwindow.option.exportlog "Export Log">
+<!ENTITY rmtagfinder.content.logwindow.submenu.copy "Copy">
+<!ENTITY rmtagfinder.content.logwindow.tableheader.time "Time">
+<!ENTITY rmtagfinder.content.logwindow.tableheader.domain "Domain">
+<!ENTITY rmtagfinder.content.logwindow.tableheader.decodedinfo "Decoded Info">
+<!ENTITY rmtagfinder.content.logwindow.tableheader.ad "Ad">
